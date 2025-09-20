@@ -20,7 +20,7 @@ params:
   title: Square Zhong's Blog
   description: "Pursue what you find interesting."
   keywords: [Blog, Portfolio, PaperMod]
-  author: Me
+  author: Square Zhong
   # author: ["Me", "You"] # multiple authors
   images: ["<link or path of image for opengraph, twitter-cards>"]
   DateFormat: "January 2, 2006"
@@ -34,6 +34,7 @@ params:
   ShowCodeCopyButtons: false
   ShowWordCount: true
   ShowRssButtonInSectionTermList: true
+  # ShowFullTextinRSS: true
   UseHugoToc: true
   disableSpecial1stPost: false
   disableScrollToTop: false
@@ -84,6 +85,8 @@ params:
     #   url: "https://stackoverflow.com"
     - name: github
       url: "https://github.com/squarezhong"
+    - name: "rss"
+      url: "https://squarezhong.github.io/index.xml"
 
   analytics:
     google:

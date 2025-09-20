@@ -36,8 +36,6 @@ editPost:
     appendFilePath: true # to append file path to Edit link
 ---
 
-# RSS：信息时代主动化茧
-
 ## 前言
 
 在信息爆炸的当下，为了不被信息的洪流冲垮，为了不被推荐算法绑架，在所谓开放的信息世界中作茧自缚，看似落后于时代的 RSS 反而成为一方净土。

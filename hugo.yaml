@@ -15,6 +15,10 @@ minify:
   disableXML: true
   minifyOutput: true
 
+services:
+  googleAnalytics:
+    id: G-48YBD6K51N
+
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: Square Zhong's Blog
@@ -92,7 +96,7 @@ params:
 
   analytics:
     google:
-      SiteVerificationTag: "G-48YBD6K51N"
+      SiteVerificationTag: "XYZabc"
     bing:
       SiteVerificationTag: "XYZabc"
     yandex:

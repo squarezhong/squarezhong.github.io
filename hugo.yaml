@@ -87,6 +87,8 @@ params:
       url: "https://github.com/squarezhong"
     - name: "rss"
       url: "https://squarezhong.github.io/index.xml"
+    - name: "buymeacoffee"
+      url: "https://buymeacoffee.com/squarezhong"
 
   analytics:
     google:

@@ -48,7 +48,7 @@ editPost:
 
 唯一参考：[官方 README](https://docs.tmodloader.net/docs/stable/md__github_workspace_src_t_mod_loader__terraria_release_extras__dedicated_server_utils__r_e_a_d_m_e.html)
 
-# Installation
+## Installation
 
 安装前提是你的云服务器已经配置好 Docker Compose。
 
@@ -76,7 +76,7 @@ sudo docker compose up
 
 后台启动后你可以使用 `sudo docker attach tml` 来访问该容器。
 
-# Mods & Worlds
+## Mods & Worlds
 
 首先看一下我们创建的 tModLoader 文件夹的结构：
 
@@ -104,7 +104,7 @@ sudo docker compose up
 
 服务端安装模组和配置地图都非常简单。
 
-## Mods
+### Mods
 
 修改 `install.txt` 为对应模组编号，修改 `enabled.json` 为对应模组名称。
 
@@ -122,11 +122,11 @@ sudo docker compose up
 > 5. Enter the folder with the name of your modpack
 > 6. Make a `Mods` folder and copy `install.txt` and `enabled.json` file into it
 
-## Maps
+### Maps
 
 你可以直接在服务端创建世界，也可以将要使用世界的 twld 和 wld 文件放入 Worlds 文件夹。
 
-# Troubleshooting
+## Troubleshooting
 
 ### 物品无法正常掉落
 

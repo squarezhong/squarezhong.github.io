@@ -1,6 +1,6 @@
 ---
 title: "My 1st post"
-date: 2025-09-15T11:30:03+80:00
+date: 2025-05-10T12:11:03+08:00
 # weight: 1
 # aliases: ["/first"]
 tags: ["first"]

@@ -132,7 +132,7 @@ menu:
     #   weight: 10
     - identifier: About
       name: About
-      url: about/
+      url: /about/
       weight: 10
     - identifier: Search
       name: Search

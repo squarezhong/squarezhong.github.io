@@ -177,12 +177,13 @@ curl -sL https://yabs.sh | bash
     ```
 ### 挂载 NTFS 设备
 存储电影电视剧的硬盘原本在 Windows 上运行，考虑到兼容性和可迁移性，不做格式化，直接在 Linux 下挂载使用。
-```shell
-lsblk -f # 查看移动硬盘 UUID
-id # 查看用户 id 
-sudo mkdir -p /mnt/Videos # 创建你希望的挂载点
-sudo vim /etc/fstab
-```
+- 创建挂载点
+    ```shell
+    lsblk -f # 查看移动硬盘 UUID
+    id # 查看用户 id 
+    sudo mkdir -p /mnt/Videos # 创建你希望的挂载点
+    sudo vim /etc/fstab
+    ```
 - 添加以下内容（需要根据实际UUID、挂载点、uid和gid修改）
     ```
     UUID=371F208A1CC186D2 /mnt/Videos  ntfs-3g  defaults,uid=1000,gid=1000,dmask=022,fmask=133,windows_names  0  0
@@ -197,6 +198,43 @@ sudo vim /etc/fstab
 lsblk
 sudo umount <MOUNTPOINTS>
 ```
+
+### 配置 Samba 共享
+
+曾经折腾过一阵子 Jellyfin，后来觉得花这么多时间折腾那个海报墙，还不如直接开个 Netflix 会员。现在直接用 Samba 共享硬盘内容，其他设备直接访问，或者使用 Infuse 或者 SenPlayer 挂载后播放。
+
+- 安装 Samba
+    ```shell
+    sudo apt update
+    sudo apt install samba
+    sudo vim /etc/samba/smb.conf
+    ```
+
+- 在文件末尾添加如下内容
+    ```
+    [Videos]
+        path = /mnt/Videos # 根据实际挂载点修改
+        browsable = yes
+        writable = no
+        guest ok = yes
+        read only = yes
+        create mask = 0755
+        directory mask = 0755
+    ```
+- 重启 Samba 服务
+    ```shell
+    sudo systemctl restart smbd
+    ```
+- 设置 Samba 账户密码
+    ```shell
+    sudo smbpasswd -a <your_username>
+    ```
+- 在其他设备上访问共享
+    - Windows 资源管理器地址栏输入 `\\Server IP\Videos`
+    - macOS Finder 菜单栏选择 前往 -> 连接服务器，输入 `smb://Server IP/Videos`
+
+
+
 ### Qbittorrent WebUI
 玩 PT 还是少不了它。
 ```yml

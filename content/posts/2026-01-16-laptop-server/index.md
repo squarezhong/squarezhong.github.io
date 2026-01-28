@@ -185,7 +185,7 @@ curl -sL https://yabs.sh | bash
     sudo vim /etc/fstab
     ```
 - 添加以下内容（需要根据实际UUID、挂载点、uid和gid修改）
-    ```
+    ```ini
     UUID=371F208A1CC186D2 /mnt/Videos  ntfs-3g  defaults,uid=1000,gid=1000,dmask=022,fmask=133,windows_names  0  0
     ```
 - 测试挂载情况
@@ -211,7 +211,7 @@ sudo umount <MOUNTPOINTS>
     ```
 
 - 在文件末尾添加如下内容
-    ```
+    ```ini
     [Videos]
         path = /mnt/Videos # 根据实际挂载点修改
         browsable = yes

@@ -1,6 +1,6 @@
 ---
 title: "WSL2 使用 CUDA Toolkit"
-date: 2026-02-06T12:11:03+08:00
+date: 2026-01-26T12:11:03+08:00
 # weight: 1
 # aliases: ["/first"]
 tags: ["CUDA", "System"]

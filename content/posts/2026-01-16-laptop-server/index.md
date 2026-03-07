@@ -44,6 +44,28 @@ editPost:
 1. 下载[官方镜像](https://ubuntu.com/download/server)。
 2. 使用诸如 Ventoy，Rufus 等等的启动盘制作工具制作启动盘。
 3. 按照官方引导一步步安装系统即可，**LVM**(Logical Volume Management) 功能建议启用，方便后续分区调整。
+### 配置网络
+由于这台笔记本并没有 RJ45 网口，所以只能使用无线网络。安装系统时会提示选择网络，选择无线网络并输入密码连接即可。
+
+如果你在那一步没有连接网络，或者之后想修改网络配置，可以使用以下命令：
+1. 运行 `ip a` 查看网络接口名称，例如 `wlp2s0`。
+2. 运行 `sudo vim /etc/netplan/xxxx.yaml` （文件名称可能不同，请自行修改） 编辑网络配置文件，内容如下（需要根据实际接口名称修改）：
+    ```
+    network:
+    version: 2
+    renderer: networkd
+    wifis:
+        <INTERFACE_NAME>:
+        dhcp4: true
+        access-points:
+            "<YOUR_SSID>":
+            password: "<YOUR_PASSWORD>"
+    ```
+3. 保存并退出编辑器，应用配置：
+    ```shell
+    sudo netplan generate
+    sudo netplan apply
+    ```
 ### SSH
 - 推荐安装时勾选 OpenSSH 的选项。
 - 安装时未勾选的话则手动进行安装
@@ -152,6 +174,7 @@ curl -sL https://yabs.sh | bash
     * * * * * /usr/local/bin/battery_monitor.sh
     ```
 ---
+
 ## Docker
 说实话很多东西还是大公司提供的云服务用起来方便，自己对一些薅羊毛的自动化脚本也不感兴趣，所以只部署了网络唤醒和几个 PT 相关的容器。
 

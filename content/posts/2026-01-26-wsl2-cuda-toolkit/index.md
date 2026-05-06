@@ -10,7 +10,7 @@ showToc: true
 TocOpen: false
 draft: false
 hidemeta: false
-comments: false
+comments: true
 description: "在 WSL2 中使用 CUDA Toolkit 基本无需额外配置."
 canonicalURL: "https://canonical.url/to/page"
 disableHLJS: true # to disable highlightjs

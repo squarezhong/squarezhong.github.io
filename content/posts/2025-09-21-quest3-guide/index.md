@@ -10,7 +10,7 @@ showToc: true
 TocOpen: false
 draft: false
 hidemeta: false
-comments: false
+comments: true
 description: "不成熟 VR 时代的不成熟方案."
 canonicalURL: "https://canonical.url/to/page"
 disableHLJS: true # to disable highlightjs

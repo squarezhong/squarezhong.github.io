@@ -9,7 +9,7 @@ showToc: true
 TocOpen: false
 draft: false
 hidemeta: false
-comments: false
+comments: true
 description: "生命不息，折腾不止。"
 canonicalURL: "https://canonical.url/to/page"
 disableHLJS: true # to disable highlightjs

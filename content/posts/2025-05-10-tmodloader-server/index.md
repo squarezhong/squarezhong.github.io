@@ -10,7 +10,7 @@ showToc: true
 TocOpen: false
 draft: false
 hidemeta: false
-comments: false
+comments: true
 description: "Host your own tModLoader server."
 canonicalURL: "https://canonical.url/to/page"
 disableHLJS: true # to disable highlightjs

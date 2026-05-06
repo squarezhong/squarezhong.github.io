@@ -10,7 +10,7 @@ showToc: true
 TocOpen: false
 draft: false
 hidemeta: false
-comments: false
+comments: true
 description: "将输入掌握在自己手中"
 canonicalURL: "https://canonical.url/to/page"
 disableHLJS: true # to disable highlightjs

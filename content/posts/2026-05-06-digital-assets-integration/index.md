@@ -35,7 +35,7 @@ editPost:
     appendFilePath: true # to append file path to Edit link
 ---
 
-先说一下基本情况，目前活跃使用的~~生产力类型（谁说 iPad Pro 没有生产力😄）~~数码产品包括 3 台手机（iPhone \* 2 + Android \* 1)，1 台平板（iPad），3 台笔记本（macOS \* 1 + Windows \* 1 + Linux \* 1)，1 台台式机（Linux），总计 8 个设备。
+先说一下基本情况，目前活跃使用的~~生产力类型（谁说 iPad Pro 没有生产力😄）~~ 数码产品包括 3 台手机（iPhone \* 2 + Android \* 1)，1 台平板（iPad），3 台笔记本（macOS \* 1 + Windows \* 1 + Linux \* 1)，1 台台式机（Linux），总计 8 个设备。
 
 在本次数字资产整合前，笔者的笔记、书签、密码、存储管理都相当混乱，不同的设备各自为战，造成了相当的体验割裂感。整合后笔记、书签、密码分别统一到了对应的解决方案，一定程度上提升了跨设备使用的体验。
 

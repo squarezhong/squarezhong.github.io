@@ -29,10 +29,6 @@ cover:
     caption: "<text>" # display caption under cover
     relative: false # when using page bundles set this to true
     hidden: true # only hide on current single page
-editPost:
-    URL: "https://github.com/squarezhong.github.io/content"
-    Text: "Suggest Changes" # edit text
-    appendFilePath: true # to append file path to Edit link
 ---
 
 先说一下基本情况，目前活跃使用的~~生产力类型（谁说 iPad Pro 没有生产力😄）~~ 数码产品包括 3 台手机（iPhone \* 2 + Android \* 1)，1 台平板（iPad），3 台笔记本（macOS \* 1 + Windows \* 1 + Linux \* 1)，1 台台式机（Linux），总计 8 个设备。

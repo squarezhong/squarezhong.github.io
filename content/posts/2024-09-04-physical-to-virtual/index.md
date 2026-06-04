@@ -29,10 +29,6 @@ cover:
     caption: "<text>" # display caption under cover
     relative: false # when using page bundles set this to true
     hidden: true # only hide on current single page
-editPost:
-    URL: "https://github.com/squarezhong.github.io/content"
-    Text: "Suggest Changes" # edit text
-    appendFilePath: true # to append file path to Edit link
 ---
 
 本文记录了备份物理机 Linux Mint 系统并且恢复至虚拟机中正常运行的过程。

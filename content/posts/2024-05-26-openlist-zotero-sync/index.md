@@ -30,10 +30,6 @@ cover:
     caption: "<text>" # display caption under cover
     relative: false # when using page bundles set this to true
     hidden: true # only hide on current single page
-editPost:
-    URL: "https://github.com/squarezhong.github.io/content"
-    Text: "Suggest Changes" # edit text
-    appendFilePath: true # to append file path to Edit link
 ---
 
 <span style="color:blue">[Updated on 2025-09-22]:</span> 由 Alist 切换至 [Openlist](https://github.com/OpenListTeam/OpenList)

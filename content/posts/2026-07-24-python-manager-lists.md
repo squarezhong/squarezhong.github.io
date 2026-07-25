@@ -6,9 +6,6 @@ author: Square Zhong
 description: uv is all you need
 ---
 
-> [!Note]
-> TL;DR: use [uv](https://docs.astral.sh/uv/)
-
 ## 前言
 
 AI 生成的前言，感觉不太行啊。

@@ -8,7 +8,7 @@ description: "哎，还是折腾。"
 
 ## 前言
 
-差不多一年前的这个时候，我在[NAS: 从入坑到入土 | Square Zhong's Blog](https://squarezhong.github.io/posts/2025-04-03-quit-nas/)这篇文章中写下了这样一句话：
+差不多一年前的这个时候，我在 [NAS: 从入坑到入土 | Square Zhong's Blog](https://squarezhong.github.io/posts/2025-04-03-nas-unnecessary/) 这篇文章中写下了这样一句话：
 
 > 需求应当被满足，而不是被创造。
 
@@ -178,4 +178,4 @@ sudo systemctl restart systemd-logind
 ### Docker
 
 支持 Docker Compose 且自带镜像仓库，好评。
-由于需要用到的 Docker 服务已经在[闲置笔记本折腾记录之 Ubuntu Server | Square Zhong's Blog](https://squarezhong.github.io/posts/2026-01-17-laptop-server/)中配置好了，故此处不再额外配置，仅对 qBittorrent 所挂载的下载盘进行修改。
+由于需要用到的 Docker 服务已经在 [闲置笔记本折腾记录之 Ubuntu Server | Square Zhong's Blog](https://squarezhong.github.io/posts/2026-01-17-laptop-ubuntu-server/) 中配置好了，故此处不再额外配置，仅对 qBittorrent 所挂载的下载盘进行修改。

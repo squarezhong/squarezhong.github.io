@@ -162,6 +162,8 @@ markup:
     # lineNos: true
     # style: monokai
   goldmark:
+    renderer:
+      unsafe: true
     extensions:
       passthrough:
         delimiters:

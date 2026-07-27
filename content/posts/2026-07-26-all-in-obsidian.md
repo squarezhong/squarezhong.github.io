@@ -31,15 +31,15 @@ Obsidian 是一个非常自由的笔记软件，因为哪怕你把软件本身�
 ## Configuration
 
 Appearance
-- Show inline title: Off 不然容易出现两个 title 的情况
+- `Show inline title`: Off 不然容易出现两个 title 的情况
 
 以下设置是为了获得尽可能高的 Markdown 兼容性，不至于被绑定至 Obsidian 应用本身
 
 Files and links
-- New link format: Path from current file
-- Automatically update internal links: On
-- Use \[\[Wikilinks\]\]: Off
-- Show all file types: On
+- `New link format`: Path from current file
+- `Automatically update internal links`: On
+- `Use [[Wikilinks]]`: Off
+- `Show all file types`: On
 
 ## Plugins
 

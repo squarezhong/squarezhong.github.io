@@ -20,7 +20,7 @@ jobs:
     env:
       DART_SASS_VERSION: 1.92.1
       GO_VERSION: 1.25.1
-      HUGO_VERSION: 0.150.0
+      HUGO_VERSION: 0.164.0
       NODE_VERSION: 22.18.0
       TZ: Europe/Oslo
     steps:
@@ -71,8 +71,6 @@ jobs:
           git config core.quotepath false
       - name: Get Theme
         run: git submodule update --init --recursive
-      - name: Update theme to Latest commit
-        run: git submodule update --remote --merge
       - name: Cache restore
         id: cache-restore
         uses: actions/cache/restore@v4

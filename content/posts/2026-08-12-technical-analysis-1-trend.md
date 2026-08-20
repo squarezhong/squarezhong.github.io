@@ -9,7 +9,23 @@ description: 于我而言主要是增强持仓信心
 本期介绍一些常用的趋势指标。
 需要注意的是趋势指标通常是滞后的，多用于**确认突破**而不是**预测突破**。
 
+趋势指标与动量指标并没有泾渭分明的界限，不用过于纠结某个指标到底应该被分为哪一类：
+- 部分趋势指标的计算底层逻辑是动量差值，比如 MACD 中的 DIFF，DMI 中的 ADX
+- 动量与趋势同源，都是针对价格序列的再处理，动量可以视作价格序列的微分（一阶导），趋势则是动量在时间跨度上的积分和平滑（低通滤波）。
+
 顺便吐槽一下国内主流的几个看盘软件，软件所用的技术指标连个文档都很难找。
+
+## 符号体系
+
+几篇技术分析相关文章都会使用统一的符号体系：
+- $(t)$ 为交易日 $t$
+- $\text{Close}^{(t)}$ 为交易日 $t$ 的收敛价格/收盘价
+- $\text{High}^{(t)}$ 为交易日 $t$ 的最高价格
+- $\text{High}_N^{(t)}$ 为截止交易日 $t$ 的最近 $N$ 个周期的最高价
+- $\text{Low}^{(t)}$ 为交易日 $t$ 的最低价格
+- $\text{Low}_N^{(t)}$ 为截止交易日 $t$ 的最近 $N$ 个周期的最低价
+- $N$ 为时间周期
+- $X$ 可以被视作一个序列
 
 ## MA/EMA
 
@@ -17,8 +33,14 @@ description: 于我而言主要是增强持仓信心
 
 (Simple) Moving Average，（简单）移动平均，简称 MA 或 SMA
 
-$MA_N$ = 前 $N$ 个价格的未加权平均数
-
+$\text{MA}_N$ 为过去 N 个价格的未加权平均
+$$
+\text{MA}^{(t)}_N = \displaystyle \frac{\text{Close}^{(t)} + \text{Close}^{(t-1)} + \cdots + \text{Close}^{(t-N+1)}}{N}
+$$
+也可以写成函数形式，用于更复杂的计算：
+$$
+\text{MA}^{(t)}_N(X) = \displaystyle \frac{X^{(t)} + X^{(t-1)} + \cdots + X^{(t-N+1)}}{N}
+$$
 MA120 即过去 120 个交易日收盘价格的平均数。
 
 均线是历史价格的平滑，最基础的趋势线，常用于判断支撑位、阻力位以及均线多空排列。
@@ -36,12 +58,12 @@ Exponential Moving Average，指数移动平均，后面会用到。
 $$
 \text{EMA}_N^{(t)} = \text{Close}^{(t)} \times \alpha + \text{EMA}_N^{(t-1)} \times (1 - \alpha)
 $$
-其中：
-- $\text{Close}$ 为当天的收敛价格/收盘价
-- $t$ 为第 t 个交易日
-- $N$ 为时间周期，比如 MACD 常用的 12，26，9
-- $\alpha = \frac{2}{N + 1}$ 为平滑系数 
+其中平滑系数 $\alpha = \frac{2}{N + 1}$
 
+函数形式的 EMA：
+$$
+\text{EMA}_N^{(t)}(X) = X^{(t)} \times \alpha + \text{EMA}_N^{(t-1)}(X) \times (1 - \alpha)
+$$
 ### 双均线策略
 
 非常经典且简单的量化策略，选择一条长周期均线，一条短周期均线，短线上穿长线时买入，反之卖出。在 MACD 语境下也就是 DIFF > 0 买入，DIFF < 0 卖出。
@@ -59,7 +81,7 @@ MACD 图形上共有三个组成元素：
 ### DIFF（快线）
 
 $$
-\text{DIFF} = \text{EMA}_{12} - \text{EMA}_{26}
+\text{DIFF}^{(t)} = \text{EMA}_{12}^{(t)} - \text{EMA}_{26}^{(t)}
 $$
 有的看盘软件不会直接显示这条线，而是显示为柱状图，大于 0 则代表短周期 EMA 超过了长周期 EMA。
 
@@ -70,14 +92,14 @@ Difference Exponential Average
 对 DIFF 再计算一次时间周期为 9 日的指数移动平均，过滤掉部分随机噪声
 
 $$
-\text{DEA} = \text{EMA}_9(\text{DIFF})
+\text{DEA}^{(t)} = \text{EMA}_9^{(t)}(\text{DIFF})
 $$
 ### MACD
 
 国内看盘软件的主流计算方式是将 DIFF 和 DEA 做差后乘以 2
 
 $$
-\text{MACD} = (\text{DIFF} - \text{DEA}) \times 2
+\text{MACD}^{(t)} = (\text{DIFF}^{(t)} - \text{DEA}^{(t)}) \times 2
 $$
 MACD 值通常以柱状图的形式呈现：
 - 首次 MACD > 0 代表 DIFF 上穿 DEA 线（金叉），通常为看涨信号

@@ -39,22 +39,23 @@ D^{(t)}=\max\left(\text{Close}^{(t-1)}-\text{Close}^{(t)},0\right)
 $$
 二者均为非负数且至少有一个值为 0
 
-$U$ 与 $D$ 的平均采用 $\alpha = 1/n$ 的 EMA（指数移动平均）
+$U$ 与 $D$ 的平均采用平滑移动平均 SMMA（Smoothed Moving Average / Wilder's MA），数学上等价于周期为 $2N -1$ 的 EMA（指数移动平均）。
 
 $$
-\text{EMA}_N^{(t)}(X) = X^{(t)} \times \alpha + \text{EMA}_N^{(t-1)}(X) \times (1 - \alpha)
+\text{SMMA}_N^{(t)}(X) = X^{(t)} \times \alpha + \text{SMMA}_N^{(t-1)}(X) \times (1 - \alpha)
 $$
+其中 $\alpha = \displaystyle\frac{1}{N}$
 
 RS 与 RSI 分别被定义为：
 
 $$
-\text{RS}_N^{(t)}=\frac{\operatorname{EMA}_N^{(t)}(U)}{\operatorname{EMA}_N^{(t)}(D)}
+\text{RS}_N^{(t)}=\frac{\operatorname{SMMA}_N^{(t)}(U)}{\operatorname{SMMA}_N^{(t)}(D)}
 $$
 
 $$
 \text{RSI}_N^{(t)}=
-\frac{\text{EMA}_N^{(t)}(U)}
-{\text{EMA}_N^{(t)}(U) + \text{EMA}_N^{(t)}(D)} \times 100
+\frac{\text{SMMA}_N^{(t)}(U)}
+{\text{SMMA}_N^{(t)}(U) + \text{SMMA}_N^{(t)}(D)} \times 100
 $$
 
 两者之间存在以下换算关系：
@@ -104,14 +105,14 @@ RSV 越接近 100，代表收盘价越靠近近期价格区间的上沿；越接
 对 RSV 进行一次平滑得到 K，再对 K 进行一次平滑得到 D。按照国内软件常见的 $(N,M_1,M_2)=(9,3,3)$ 公式：
 
 $$
-K^{(t)}=\text{EMA}_{M_1}^{(t)}(\text{RSV})
+K^{(t)}=\text{SMMA}_{M_1}^{(t)}(\text{RSV})
 $$
 
 $$
-D^{(t)}=\text{EMA}_{M_2}^{(t)}(K)
+D^{(t)}=\text{SMMA}_{M_2}^{(t)}(K)
 $$
 
-注意这里 EMA 所用的 $\alpha$ 与 RSI 中相同，当 $M_1=M_2=3$ 时，$\alpha$ 均为 $1/3$。K 是快线，D 是对 K 再平滑后的慢线。
+当 $M_1=M_2=3$ 时，两个 SMMA 所用的 $\alpha$ 均为 $1/3$。K 是快线，D 是对 K 再平滑后的慢线。
 
 不同软件可能将最初的 K、D 设置为 50，也可能从第一个有效 RSV 开始递推，因此刚开始的一小段结果可能不完全一致；积累足够多的周期后，这种初始化差异会逐渐衰减。
 

@@ -2,12 +2,13 @@
 title: 国区退场之后的 Kindle 使用指南
 date: 2026-08-26
 tags:
-  - "#Kindle"
-  - "#Books"
-  - "#DIY"
+  - "Kindle"
+  - "Books"
+  - "DIY"
 author: Square Zhong
 description: 还是折腾，踏踏实实买书看书完事了
 ---
+
 ## 前言
 
 2013 年 Kindle 正式入华，2023 年 6 月 Kindle 国区电子书商城关闭，正式退出中国市场，十年的运营画上句号。但 Kindle 在中国仍有大量存量用户，新设备（仅硬件）也能以较低的溢价买到。这篇文章是我本人在 Kindle 关闭国区后的一些提升使用体验的~~折腾~~尝试，可供参考。

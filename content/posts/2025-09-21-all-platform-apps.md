@@ -8,6 +8,8 @@ description: "开源是对的。"
 
 <span style="color:blue">[Updated on 2026-07-24]: 添加 UniGetUI、Codex、Raindrop.io、Chrome、Safari、Bitwarden，移除 Onedrive、MATLAB、Microsoft To Do</span>
 
+<span style="color:blue">[Updated on 2026-10-08]: 添加多个系统类工具，移除多个不再使用的 App，欢迎来到 Agent 时代</span>
+
 ## 前言
 
 刚进大学的时候搞了套苹果全家桶，当时使用的应用都基于苹果生态选择，后来手里逐渐多出了 Windows 或 Linux 系统的台式机和笔记本，以及作为备用机的安卓，为了尽可能确保统一的使用体验（以及不想被单一生态绑架），新的应用方案提上日程。
@@ -20,9 +22,9 @@ description: "开源是对的。"
 
 ### AI
 
-- [Codex](https://chatgpt.com/codex)：Tibo 能不能再给个重置
-- [Gemini](https://gemini.google.com/)：三位一体，支付友好
-- [Cherry Studio](https://www.cherry-ai.com/)：跨平台开源 AI 客户端，用于整合各家 api
+- [Codex](https://chatgpt.com/codex)：Tibo 能不能再给个 banked reset
+- [Gemini](https://gemini.google.com/)：我们的 Gemini，还能重回巅峰吗（哭）？
+- ~~[Cherry Studio](https://www.cherry-ai.com/)：跨平台开源 AI 客户端，用于整合各家 api~~
 
 ### Terminal
 
@@ -32,9 +34,9 @@ description: "开源是对的。"
 
 ### IDE
 
-- [VS Code](https://code.visualstudio.com/)（如果你觉得 VS Code 只是个文本编辑器那么你是对的）：开源
-- [Cursor](https://cursor.com/)（某种意义上也算 VS Code）
-- ~~[MATLAB](https://ww2.mathworks.cn/en/products/matlab.html)：已经和解了~~
+- [VS Code](https://code.visualstudio.com/)：Vibe Coding 时代，VS Code 回归文本编辑器，未曾设想的结局。Remote - SSH 功能非常好用。
+- ~~[Cursor](https://cursor.com/)（某种意义上也算 VS Code）~~ IDE, Out
+- ~~[MATLAB](https://ww2.mathworks.cn/en/products/matlab.html)：已经和解了~~ 什么年代了没必要用 MATLAB 了
 
 ## 学术相关
 
@@ -43,7 +45,7 @@ description: "开源是对的。"
 ### 文本写作
 
 - [Typora](https://typora.io/)：简洁易用的 Mardown 编辑器
-- [LaTeX Workshop](https://github.com/James-Yu/LaTeX-Workshop)（VS Code 插件）：很大程度上替代了我使用 Word 和 PowerPoint 的需求
+- [LaTeX Workshop](https://github.com/James-Yu/LaTeX-Workshop)（VS Code 插件）：很大程度上替代了我使用 Word 和 PowerPoint 的需求。配置方案可以参考我的另一篇 blog [All-platform Local LaTeX Solution](https://squarezhong.github.io/posts/2025-04-24-local-latex/)。
 
 ## 生活相关
 
@@ -56,9 +58,10 @@ description: "开源是对的。"
 
 - [钱迹](https://qianjiapp.com/)：合理的买断价格，云同步
 
-### 理财
+### 交易
 
-- 同花顺
+- 同花顺：可以登陆各类券商
+- 东方财富：标的更多一些
 
 ### 音乐
 
@@ -66,7 +69,8 @@ description: "开源是对的。"
 
 ### 阅读器
 
-- [Folo](https://folo.is/)：开源 RSS 阅读器
+- [Innoreader](https://www.inoreader.com/): RSS 阅读器
+- ~~[Folo](https://folo.is/)：开源 RSS 阅读器~~ 容易掉登陆
 - [Koodo Reader](https://koodoreader.com)：开源电子书阅读器
 - [Adobe Acrobat](https://www.adobe.com/acrobat.html)（Windows）：最强 PDF 阅读器
 - [PDF Expert](https://pdfexpert.com/)（macOS）：macOS 下用得最顺手的 PDF 阅读器
@@ -85,6 +89,19 @@ description: "开源是对的。"
 
 - [Bitwarden](https://bitwarden.com/)
 
+### 其他工具
+
+- [7zip](https://www.7-zip.org/download.html)（Windows）：无需多言
+- [MacZip](https://ezip.awehunt.com/)(macOS)
+- [GrandPerspective](https://grandperspectiv.sourceforge.net/)（macOS）：可视化存储占用
+- [OminiDiskSweeper](https://www.omnigroup.com/more)（macOS）：顾名思义
+
+### 网盘
+
+- ~~Onedrive：Office 365 附带的 1T 空间，在 Win 和 macOS 上都是系统级的体验~~ 速度实在是慢
+- [Google Drive](https://drive.google.com/)：开 Gemini 附带的…
+- [坚果云](https://www.jianguoyun.com/)：主要使用 WebDAV 来同步 Zotero 里的论文
+
 ## 笔记工具
 
 - [Obsidian](https://obsidian.md/)：已经 All in Obsidian 了
@@ -93,17 +110,13 @@ description: "开源是对的。"
 
 ## 浏览器
 
+- Chrome：老大哥还是老大哥，历尽千帆，归来仍是 Chrome
 - [Raindrop.io](https://raindrop.io/)：跨平台标签同步，浏览器不储存任何标签
-- [Edge](https://www.microsoft.com/en-us/edge)（Windows）：Windows 自带就不动它了
+- ~~[Edge](https://www.microsoft.com/en-us/edge)（Windows）：Windows 自带就不动它了~~ 动不动给就想改你的设置
 - Safari（macOS）：丐版 mba m1 也就只顶得住这个的开销了
-- Chrome（Linux）：老大哥还是老大哥
 
-## 网盘
-
-- ~~Onedrive：Office 365 附带的 1T 空间，在 Win 和 macOS 上都是系统级的体验~~
-- [Google Drive](https://drive.google.com/)：开 Gemini 附带的…
-- [坚果云](https://www.jianguoyun.com/)：主要使用 WebDAV 来同步 Zotero 里的论文
-
-## 应用商店
+## 应用管理
 
 - [UniGetUI](https://github.com/devolutions/unigetui)（Windows）：开源项目，整合多个软件源
+- [Geek Uninstaller](https://geekuninstaller.com/)（Windows）：用于 Windows 彻底卸载软件
+- [AppCleaner](https://freemacsoft.net/appcleaner/)（macOS）：用于 macOS 彻底卸载软件

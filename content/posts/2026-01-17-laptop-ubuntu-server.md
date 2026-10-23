@@ -71,8 +71,8 @@ type $env:USERPROFILE\.ssh\id_ed25519.pub | ssh user@hostname.example.com "mkdir
 ```shell
 sudo vim /etc/ssh/sshd_config
 ```
-4. 将其中的`#PasswordAuthentication yes`修改为`PasswordAuthentication no`
-5. 重启 sshd 服务
+将其中的`#PasswordAuthentication yes`修改为`PasswordAuthentication no`
+4. 重启 sshd 服务
 ```shell
 sudo systemctl restart sshd
 ```

@@ -5,10 +5,11 @@ tags: ["Software"]
 author: "Square Zhong"
 description: "开源是对的。"
 ---
-
-<span style="color:blue">[Updated on 2026-07-24]: 添加 UniGetUI、Codex、Raindrop.io、Chrome、Safari、Bitwarden，移除 Onedrive、MATLAB、Microsoft To Do</span>
+<span style="color:blue">[Updated on 2026-10-21]: 使用 kitty 替代 iTerm2，MATLAB 回归</span>
 
 <span style="color:blue">[Updated on 2026-10-08]: 添加多个系统类工具，移除多个不再使用的 App，欢迎来到 Agent 时代</span>
+
+<span style="color:blue">[Updated on 2026-07-24]: 添加 UniGetUI、Codex、Raindrop.io、Chrome、Safari、Bitwarden，移除 Onedrive、MATLAB、Microsoft To Do</span>
 
 ## 前言
 
@@ -28,15 +29,16 @@ description: "开源是对的。"
 
 ### Terminal
 
-- [Termius](https://termius.com/)（GitHub 学生认证后自带 Pro）：云同步，带自动补全
-- [iTerm2](https://iterm2.com/)（macOS）：开源，简洁
+- [Termius](https://termius.com/)：GitHub 学生认证后自带 Pro，全平台同步， SSH 设备多的话很方便
+- [kitty](https://github.com/kovidgoyal/kitty)（macOS & Linux）：功能丰富，使用纯配置文件进行设置，备份和同步友好。使用 ssh 初次连接某台服务器时使用 `kitten ssh <user>@<ip_address>` ，该命令会自动向服务器添加 kitty 的 terminfo
+- ~~[iTerm2](https://iterm2.com/)（macOS）：开源，简洁~~ macOS 上标杆级的终端应用，但是设置太割裂了，general config 和 profile 是分开的
 - [Terminal](https://github.com/microsoft/terminal)（Windows）：开源，新版本的 Win11 应该会自带这个终端
 
 ### IDE
 
 - [VS Code](https://code.visualstudio.com/)：Vibe Coding 时代，VS Code 回归文本编辑器，未曾设想的结局。Remote - SSH 功能非常好用。
-- ~~[Cursor](https://cursor.com/)（某种意义上也算 VS Code）~~ IDE, Out
-- ~~[MATLAB](https://ww2.mathworks.cn/en/products/matlab.html)：已经和解了~~ 什么年代了没必要用 MATLAB 了
+- ~~[Cursor](https://cursor.com/)（某种意义上也算 VS Code）~~ Vibe 时代返璞归真回归 VS Code 了
+- [MATLAB](https://ww2.mathworks.cn/en/products/matlab.html)：已经和解了
 
 ## 学术相关
 
@@ -113,7 +115,7 @@ description: "开源是对的。"
 - Chrome：老大哥还是老大哥，历尽千帆，归来仍是 Chrome
 - [Raindrop.io](https://raindrop.io/)：跨平台标签同步，浏览器不储存任何标签
 - ~~[Edge](https://www.microsoft.com/en-us/edge)（Windows）：Windows 自带就不动它了~~ 动不动给就想改你的设置
-- Safari（macOS）：丐版 mba m1 也就只顶得住这个的开销了
+- ~~[Safari](https://www.apple.com/safari/)（macOS）：丐版 mba m1 也就只顶得住这个的开销了~~
 
 ## 应用管理
 

@@ -16,10 +16,19 @@ description: 还不够
 
 ## Cheatsheets
 
+### 网页版
+
 推荐开源项目 reference，收录了大部分开发工具的 Cheatsheets
 
 - [中文版](https://wangchujiang.com/reference/)：内容比英文版更多一些
 - [English Version](https://quickref.me/)
+
+### 终端版本
+
+- [tldr](https://github.com/tldr-pages/tldr)
+- [cheat.sh](https://github.com/chubin/cheat.sh)
+
+---
 
 通常命令行工具通常会遵循类似下面的范式：
 

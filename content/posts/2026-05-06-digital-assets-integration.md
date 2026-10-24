@@ -18,6 +18,6 @@ description: "All in boom"
 | Current  | Obsidian                                                   | Raindrop.io                         | Bitwarden                                                                                                                  |
 - Obsidian 同步使用 [Remotely Save](https://github.com/remotely-save/remotely-save) 插件完成加密存储，通过 WebDav（fnOS 自带） + Nginx 实现校园网范围内同步，未来若有需要也可以上 Cloudflare Tunnel 。不用坚果云的原因是坚果云的 WebDav 服务有单位时间访问次数限制，笔记总数较多（目前 1700+）时容易撞墙。
 - Raindrop.io 只用来存储书签，泄密也无妨。
-- Bitwarden 服务端使用 Docker 部署的 [Vaultwarden](https://github.com/dani-garcia/vaultwarden) + Cloudflare Tunnel
+- Bitwarden 服务端使用 Docker 部署的 [Vaultwarden + Cloudflare Tunnel](https://squarezhong.github.io/posts/2026-10-24-vaultwarden-cloudflare-tunnel/)
 
 关于存储的跨平台方案还在思考中，后续有进展了会在这更新。

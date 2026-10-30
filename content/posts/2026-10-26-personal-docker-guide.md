@@ -234,13 +234,13 @@ services:
 LAN_IP=192.168.31.250
 
 # 允许本地局域网以及路由器直连的上行子网访问。
+# 请自行修改为符合需求的网段，我这里是允许小米路由器以及整个大的校园网下的 IP 访问
 # 如有其他经路由的客户端网段，按需添加。多个 CIDR 之间用空格分隔。
-LAN_CIDRS="192.xxx.xxx.xxx/24 10.xxx.xxx.xxx/20"
+LAN_CIDRS="192.168.31.0/24 10.0.0.0/8"
 
 # Cloudflare API Token：Zone / Zone / Read + Zone / DNS / Edit。
 # 将 Zone Resources 限制为自己的域名。不要使用 Global API Key。
 CF_API_TOKEN=
-
 ```
 
 最后在 `caddy/Caddyfile` 中设置需要被反向代理的服务的局域网地址和对应域名（将 server1、server2 等修改为你实际的二级域名）

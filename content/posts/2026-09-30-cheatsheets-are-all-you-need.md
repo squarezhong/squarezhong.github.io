@@ -16,7 +16,14 @@ description: 还不够
 
 ## Cheatsheets
 
-### 网页版
+### 官方版
+
+- [Ubuntu](https://assets.ubuntu.com/v1/d00791ae-ubuntu_cli_cheat_sheet_2025.pdf)
+- [Git](https://git-scm.com/cheat-sheet)
+- [Docker CLI](https://docs.docker.com/get-started/docker_cheatsheet.pdf)
+- To be continued...
+
+### 网页聚合版
 
 推荐开源项目 reference，收录了大部分开发工具的 Cheatsheets
 

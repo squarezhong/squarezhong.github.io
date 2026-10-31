@@ -6,9 +6,9 @@ author: Square Zhong
 description: Maybe Prism is better.
 ---
 
-<span style="color:blue">[Updated on 2026-07-25]: Recommend Prism and Overleaf</span>
+<span style="color:blue">[Updated on 2026-07-25]: Recommend Overleaf</span>
 
-If you don't want to make things complicated, or you need to collaborate with others, just use [Prism](https://prism.openai.com/) by OpenAI or [Overleaf](https://www.overleaf.com/).
+If you don't want to make things complicated, or you need to collaborate with others, just use [Overleaf](https://www.overleaf.com/).
 
 ---
 
